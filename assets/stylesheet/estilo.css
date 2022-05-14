@@ -1,0 +1,275 @@
+/* GERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif ;
+    color: rgba(137,137,139,255) ;
+}
+
+body h3 {
+    font-size: 24px;
+}
+
+body h4 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+/* CONTAINERS */
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.container-geral {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-lado {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+/* CABEÇALHO */
+
+header {
+    background-color: rgba(0,202,209,255);
+}
+
+header section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header section img {
+    width: 150px;
+}
+
+.links-topo {
+    margin-left: 15px;
+    padding: 10px;
+}
+
+.links-topo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+
+    margin: 10px;
+    padding: 5px;
+}
+
+/* BANNER */
+
+#banner {
+    width: 100%;
+    height: 500px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-image: url(../img/recepcao.png);
+    background-size: cover;
+
+    color: #fff;
+    font-size: 32px;
+}
+
+#banner div h1 {
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/* SOBRE */
+
+#Sobre div{
+    display: flex;
+    justify-content: center;
+}
+
+#Sobre div ul li {
+    text-align: start;
+}
+
+/* CONSULTAS */
+
+#Consultas  div img{
+    width: 300px;
+}
+
+#Consultas div figure {
+    box-shadow: 5px 5px 10px black ;
+    margin: 20px;
+}
+
+#Consultas div figcaption {
+    text-align: center;
+}
+
+#Consultas div a {
+    background-color: rgba(2,199,211,255);
+
+    width: 250px;
+    height: 70px;
+
+    text-decoration: none;
+    color: #fff;
+    
+    text-align: center;
+    display: flex;
+    font-size: 34px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTATO */
+
+#Contato div h3, p {
+    margin: 15px;
+}
+
+#Contato div iframe{
+    width: 75%;
+    height: 500px;
+}
+
+/* RODAPÉ */
+
+footer {
+    background-color: rgba(12,110,113,255) ;
+    margin-top: 100px;
+
+    color: #fff;
+}
+
+footer section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img {
+    width: 200px;
+}
+
+footer section div,p {
+    margin-top: 10px;
+
+    text-align: center;
+    font-size: 16px;
+}
+
+@media  (max-width: 425px) {
+
+    body p, h1, h2, h3, h4, ul li{
+        font-size: calc( 100% / 1.5 );
+    }
+
+    body h4 {
+        font-size: calc( 100% / 1.5 );
+    }
+
+     body h3 {
+        font-size: calc( 100% / 1.5 );
+    }
+
+    body img {
+        width: calc( 100% / 1.5);
+        height: calc( 100% / 1.5);
+    }
+
+    .container-lado {
+        flex-direction: column;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    /* CABEÇALHO */
+
+    header section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header section div:last-child {
+         border-top: 1px solid rgb(137,137,139);
+    }
+
+    .links-topo a {
+        font-size: 12px;
+    }
+
+    /* BANNER */
+
+    #banner {
+        height: 200px;
+
+        font-size: 18px;
+    }
+
+    /* SOBRE */
+
+    #Sobre img {
+        display: none;
+    }
+
+    #Consultas div img{
+        width: 100%;
+    }
+
+    #Consultas div a {
+        width: calc( 100% / 2);
+        height: calc( 100% / 1.5);;
+        font-size: calc( 100% / 1.5);
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    
+    * {
+        width: 100%;
+    }
+    
+    #banner {
+        height: 300px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    #banner {
+        height: 400px;
+    }
+}
+
+
+
+
+
+
+
