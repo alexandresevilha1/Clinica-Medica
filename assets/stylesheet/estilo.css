@@ -39,6 +39,7 @@ body h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .container-lado {
@@ -150,7 +151,7 @@ header section img {
 }
 
 #Contato div iframe{
-    width: 75%;
+    width: 100%;
     height: 500px;
 }
 
@@ -252,20 +253,168 @@ footer section div,p {
 
 @media (min-width: 426px) and (max-width: 768px) {
     
-    * {
+    body p, h1, h2, h3, h4, ul li{
+        font-size: calc( 100% * 1.5 );
+    }
+
+    body h4 {
+        font-size: calc( 100% * 1.5 );
+    }
+
+     body h3 {
+        font-size: calc( 100% * 1.5 );
+    }
+
+    body figure {
+        width: calc( 100% / 2.7);
+        height: calc( 100% / 2.7);
+
+        font-size: 140%;
+    }
+
+    .container-geral {
+        text-align: center;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-lado {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {
         width: 100%;
     }
-    
+
+    /* CABEÇALHO */
+
+    .links-topo a {
+        font-size: 24px;
+    }
+
+    /* BANNER */
+
     #banner {
         height: 300px;
+
+        font-size: 24px;
+    }
+
+    /* SOBRE */
+
+    #Sobre img {
+        display: none;
+    }
+
+    #Consultas div img{
+        width: 100%;
+    }
+
+    #Consultas div a {
+        width: calc( 100% / 2);
+        height: calc( 100% / 1.5);;
+        font-size: calc( 100% / 1.5);
+    }
+
+    #iframe {
+        width: 100%
+    }
+
+    #botao {
+        height: 100px;
+        width: 10px auto;
+        font-size: 44px;
     }
 }
 
+
 @media (min-width: 769px) and (max-width: 1024px) {
+    
+    body p, h1, h2, h3, h4, ul li{
+        font-size: calc( 100% * 1.2 );
+    }
+
+    body h4 {
+        font-size: calc( 100% * 1.2 );
+    }
+
+     body h3 {
+        font-size: calc( 100% * 1.2 );
+    }
+
+    body figure {
+        width: calc( 100% / 2.7);
+        height: calc( 100% / 2.7);
+
+        font-size: 140%;
+    }
+
+    .container-geral {
+        text-align: center;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;    
+    }
+
+    .container-lado {
+       display: flex;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    /* CABEÇALHO */
+
+    .links-topo a {
+        font-size: 24px;
+    }
+
+    /* BANNER */
+
     #banner {
-        height: 400px;
+        height: 300px;
+
+        font-size: 24px;
+    }
+
+    /* SOBRE */
+
+    #Sobre figure{
+        margin-bottom: 100px;
+    }
+
+    /* CONSULTAS */
+
+    #Consultas div img{
+        width: 100%;
+    }
+
+    #Consultas div a {
+        width: calc( 100% / 2);
+        height: calc( 100% / 1.5);;
+        font-size: calc( 100% / 1.5);
+    }
+
+    #iframe {
+        width: 100%
+    }
+
+    #botao {
+        height: 100px;
+        width: 10px auto;
+        font-size: 44px;
     }
 }
+
 
 
 

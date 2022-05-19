@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif ;
+    color: rgba(137,137,139,255) ;
+}
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+/* CABEÇALHO */
+
+header {
+    background-color: rgba(0,202,209,255);
+}
+
+header section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header section img {
+    width: 150px;
+}
+
+.links-topo {
+    margin-left: 15px;
+    padding: 10px;
+}
+
+.links-topo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+
+    margin: 10px;
+    padding: 5px;
+}
+
+/* MENU */
+
+#Menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Menu div{
+    display: flex;
+    justify-content: space-between;
+}
+
+#Menu div:first-child {
+    width: 40%;
+}
+
+#Menu a{
+    font-size: 20px;
+    text-decoration: none;
+    margin: 10px;
+    color: black;
+    border-bottom: 3px solid rgba(0,202,209,255);
+}
+
+/* CORPO */
+
+.corpo {
+    margin-top: 50px;
+}
+
+.corpo div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px auto;
+    margin: 10px auto;
+}
+
+.corpo div:last-child{
+    display: flex; 
+    flex-direction: row;
+    height: 300px;
+    width: 1024px;
+}
+
+.corpo img {
+    width: 30%;
+    height: 100%;
+}
+
+.corpo p {
+    width: 50%; 
+}
+
+.corpo table{
+    height: 100%;
+    width: 70%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.corpo th {
+    background-color: rgba(0,202,209,255);
+    color: white;
+    padding-left: 10px;
+}
+
+.corpo td {
+    padding-left: 10px;
+}
+
+.corpo tr:nth-of-type(2n+1) {
+    background-color: rgba(205,205,205,255);
+}
+
+.corpo tr:nth-of-type(2n+2) {
+    background-color: rgba(241,241,241,255);
+}
+
+/* RODAPÉ */
+
+footer {
+    background-color: rgba(12,110,113,255) ;
+    margin-top: 100px;
+
+    color: #fff;
+}
+
+footer section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img {
+    width: 200px;
+}
+
+footer section div,p {
+    margin-top: 10px;
+
+    text-align: center;
+    font-size: 16px;
+}
